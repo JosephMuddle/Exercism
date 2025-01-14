@@ -16,5 +16,5 @@ export const decodedValue = (cols) => {
     "grey":8,
     "white":9,
   };
-  return Number(cols.map(col => coldict[col]).join(''));
+  return Number(cols.slice(0,2).map(col => coldict[col]).join(''));
 };

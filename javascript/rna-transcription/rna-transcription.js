@@ -3,6 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const toRna = () => {
-  throw new Error('Remove this statement and implement this function');
+export const toRna = (dna_strand) => {
+  let dna_to_rna_dict = {"G":"C", "C":"G","T":"A","A":"U"};
+  return dna_strand==''?'': Array.from(dna_strand).map(dna => dna_to_rna_dict[dna]).join('');
 };
